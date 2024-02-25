@@ -2,7 +2,7 @@ spring:
   application:
     name: country
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/country'
+    url: 'jdbc:postgresql://localhost:5432/country-db'
     username: postgres
     password: secret
     hikari:
@@ -27,5 +27,5 @@ spring:
     enabled: true
     baseline-on-migrate: true
     baseline-version: 0
-    schemas: country
+    schemas: public
     locations: classpath:db/migration/country

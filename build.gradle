@@ -16,10 +16,12 @@ repositories {
 }
 
 def postgresqlVersion = "42.7.2"
+def flywayVersion = "9.22.2"
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation "org.flywaydb:flyway-core:${flywayVersion}"
     runtimeOnly "org.postgresql:postgresql:${postgresqlVersion}"
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
